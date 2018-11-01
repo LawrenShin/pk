@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 //components
 import Users from '../components/Users.js';
-import Welcome from '../components/Welcome.js';
+import Auth from '../components/Auth.js';
 import NotFound from '../components/404.js';
 import AppHeader from '../components/Header.js';
 
@@ -14,7 +14,7 @@ const AppRouter = () => (
     <div>
       <AppHeader/>
       <Switch>
-        <Route exact path="/" component={Welcome} />
+        <Route exact path="/" component={Auth} />
         <Route path="/users" component={Users} />
         <Route component={NotFound} />
       </Switch>
